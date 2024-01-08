@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/59/53/90/595390a1ccfaa76b8a10b8905d4b9d0e.jpg">
+    <title>MovieFLixx-Home</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    Movie<span class="flixx">Flixx</span>
+                  </a>                  
+                <div class="d-flex">
+                    <search-tools style="order: 1;"></search-tools>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="jumbotron bg-dark text-white">
+            <hero-image></hero-image>
+        </div>
+    </div>
+    
+    <main class="container-fluid">
+        <div class="container mt-5">
+            <h2>Top Rated Movies</h2>
+            <movie-list></movie-list>
+            
+            <h2 class="mt-5">Now Playing</h2>
+            <movie-list data-list="nowPlaying"></movie-list>
+            <h2 class="mt-5">Upcoming</h2>
+            <movie-list data-list="upcoming"></movie-list>
+            
+        </div>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
